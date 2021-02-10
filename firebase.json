@@ -1,0 +1,25 @@
+{
+  "hosting": {
+    "public": "public",
+    "redirects": [{
+      "source" : "/myaccount",
+      "destination" : "/myaccount.html",
+      "type" : 301
+    }, {
+      "source" : "/mycollection",
+      "destination" : "/mycollection.html",
+      "type" : 301
+    }, {
+      "source" : "/register",
+      "destination": "/register.html",
+      "type" : 301
+    }, {
+      "source" : "/download",
+      "destination" : "/download.html",
+      "type" : 301
+    }]
+  },
+  "database": {
+    "rules": "database.rules.json"
+  }
+}

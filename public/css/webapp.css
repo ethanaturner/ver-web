@@ -1,0 +1,361 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.ver-input {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  padding: 9px 14px;
+  width: 40%;
+}
+
+.ver-input:hover, .ver-input:active, .ver-input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .ver-input {
+    width: 75%;
+  }
+}
+
+/* My Account */
+
+#accountavatar {
+  display: inline-block;
+  height: 128px;
+  width: 128px;
+}
+
+#accountmenu {
+  visibility: hidden;
+}
+
+#logindialog {
+  font-family: 'Raleway', sans-serif;
+}
+
+#email {
+  display: block;
+  width: 100%;
+}
+
+#password {
+  display: block;
+  width: 100%;
+}
+
+.ui-dialog-titlebar-close {
+  display: none;
+}
+
+.ui-dialog-title {
+  font-family: 'Raleway', sans-serif;
+}
+
+.ui-dialog-buttonset {
+  font-family: 'Raleway', sans-serif;
+}
+
+#cancel, #signin, #returnhome {
+  font-family: 'Raleway', sans-serif;
+}
+
+#logindialogwrapper, #logoutdialogwrapper, #updateprofilewrapper, #updatepasswordwrapper, #nouserdialog {
+  display: none;
+}
+
+#typedialog, #requestfaileddialog, #addtocollectiondialog, #comingsoondialog {
+  display: none;
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+.disabled {
+  display: none !important;
+}
+
+.enabled {
+  display: block !important;
+}
+
+@media screen and (min-width: 768px) {
+  #editprofilebtn, #editcapacitybtn {
+    float: right;
+  }
+}
+
+#useremail, #usercapacity {
+  font-style: italic;
+  color: grey;
+}
+
+#updateprofiledialog input {
+  display: block;
+  width: 100%;
+}
+
+/* Register Stylings */
+
+#registerfirstname, #registerlastname, #registeremail, #registerconfirmemail, #registerpassword, #registerconfirmpassword {
+  display: block;
+  width: 100%;
+}
+
+#registerform {
+  width: 100%;
+}
+/*form styles*/
+#registerform fieldset {
+	width: 80%;
+}
+
+#registerform input, #registerform textarea {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	color: #2C3E50;
+	font-size: 14px;
+}
+
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+#registerservices {
+  display: none;
+}
+
+.servicelabel {
+  display: block;
+  margin-top: 40px;
+}
+
+#disclaimer {
+  width: 100%;
+  display: block;
+  margin-top: 40px;
+  font-style: italic;
+}
+
+#confirmservicesbtn {
+  margin-top: 40px;
+}
+
+#securitynote {
+  font-style: italic;
+}
+
+.toggle, .toggle-on, .toggle-off { 
+  width: 50% !important;
+}
+
+.mycollectionjumbo {
+  height: 400px !important;
+}
+
+.mycollectionheader {
+  margin-top: 60px !important;
+  line-height: normal !important;
+}
+
+.verpanel {
+  width: 100% !important;
+}
+
+@media screen and (min-width: 768px) {
+  .verpanel {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .verpanel {
+    height: 975px;
+  }
+}
+
+.collectionlistitem {
+  cursor: pointer;
+}
+
+.ver-panel-body {
+  width: 100%;
+}
+
+#contenttitle {
+  margin: 0 !important;
+}
+
+#contentimage {
+  width: 240px;
+  height: 342px;
+}
+
+#contentyeartype {
+  font-style: italic;
+  margin-top: 0;
+}
+
+#contentoverview {
+  margin-top: 20px !important;
+}
+
+#availablesourcestitle {
+  margin-left: 2%;
+  margin-top: 40px !important;
+}
+
+#availablesourcesline, #availablesourcesparagraph {
+  width: 70%;
+  height: 8px !important;
+  margin-left: 2%;
+}
+
+.contentlinks {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 2%;
+}
+
+.resultinfocontainer {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .resultinfocontainer {
+    display: block;
+    margin-left: 0;
+    margin-top: 5%;
+  }
+  
+  #availablesourcestitle, #availablesourcesline, #availablesourcesparagraph {
+    margin-left: 4%;
+  }
+  
+}
+
+#resultimage {
+  width: 120px;
+  height: 171px;
+}
+
+#resulttitle {
+  display: inline-block;
+}
+
+@media screen and (max-width: 991px) {
+  .title-info-col {
+    margin-left: 2%;
+  }
+  
+  #contenttitle {
+    margin-top: 5% !important;
+  }
+  
+  #addtocollectionbtn {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .resultinfocontainer {
+    display: block;
+    margin-left: 0;
+    margin-top: 5%;
+  }
+  
+  #addtocollectionbtn {
+    margin-top: 5%;
+  }
+}
+
+.clock-builder-output {
+  display: block !important;
+  margin: 0 auto !important;
+  margin-top: 100px !important;
+  width: 700px !important;
+  padding-left: 40px !important;
+}
+
+#homeallinone {
+  margin-top: 2% !important;
+}
+
+@media screen and (max-width: 768px) {
+  .fh5co-hero {
+    height: 900px;
+  }
+}
+
+.infosearchdivwrapper {
+  margin-top: 2%;
+}
+
+.infosearchdiv {
+  display: block;
+}
+
+#pagesearchfielddiv {
+  width: 100% !important;
+  margin-top: 2em !important;
+}
+
+#pagesearchfield {
+  display: inline-block;
+  width: 80%;
+}
+
+#gosearchwrapper {
+  display: inline-block;
+  margin-left: 8%;
+  width: 11% !important;
+}
+
+#pagegosearchbtn {
+  width: 100% !important;
+}
+
+#honeypot-div {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  #pagesearchfield {
+    display: block;
+    width: 100%;
+  }
+  #gosearchwrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100% !important;
+  }
+}

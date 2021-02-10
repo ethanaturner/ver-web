@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Ver - Register.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Ver: The easiest way to search major video streaming services and your own collection of shows and movies." />
+		<meta name="keywords" content="netflix, amazon prime, hulu, ver, streaming, video, dvds, bluray, where to watch" />
+		<meta name="author" content="ver.firebaseapp.com" />
+
+  <!--
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="The Ver App" />
+	<meta name="twitter:url" content="www.twitter.com/theverapp" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c64727">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300i,400,500,600" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/superfish.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/webapp.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/blitzer/jquery-ui.min.css">
+	<link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	</head>
+	<body ng-app="verForWeb" ng-controller="verController">
+		<script>
+			var app = angular.module('ver', []);
+		    app.controller('verCtrl', ['$window', '$scope', function ($window, $scope) {
+				$scope.signOut = function(){
+					firebase.auth().signOut().then(function() {
+	                    console.log("Logged out.");
+	                }, function(error) {
+	                    console.log(error.message);
+	                });
+				};
+		    }
+		    ]);
+		</script>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div id="fh5co-header" ng-include="'header.html'"></div>
+
+		<div class="fh5co-hero fh5co-hero-2" id="myaccountarea">
+			<div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_3.jpg);">
+				<div class="desc animate-box">
+					<h2>Register for Ver</h2>
+					<span id="subtitle">Welcome! We're glad you're here.</span>
+				</div>
+			</div>
+		</div>
+		<!-- end:header-top -->
+		<div id="fh5co-work">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 work">
+						<div class="row">
+							<div class="col-md-12 animate-box">
+							    <div class="desc">
+							        <h2>Register</h2>
+							        <form id="registerform" action="#">
+							            <div>
+							                <fieldset id="registerbasic">
+							                    <h4>Basic Information</h4>
+               							        <h5 id="subtext">Each field is required.</h5>
+               							        <h6 id="securitynote"><i class="icon-lock"></i> Your information is safe with us. We'll never sell it, either.</h6>
+                 							    <label for="firstname">First Name</label>
+                							    <input type="text" id="registerfirstname" class="text ui-widget-content ui-corner-all"/>
+                							    <label for="lastname">Last Name</label>
+                							    <input type="text" id="registerlastname" class="text ui-widget-content ui-corner-all"/>
+                							    <label for="email">Email</label>
+                							    <input type="email" id="registeremail" class="text ui-widget-content ui-corner-all"/>
+                							    <label for="confirmemail">Confirm email</label>
+                							    <input type="email" id="registerconfirmemail" class="text ui-widget-content ui-corner-all"/>
+                							    <label for="password">Password (6 or more characters)</label>
+                							    <input type="password" id="registerpassword" class="text ui-widget-content ui-corner-all"/>
+                							    <label for="confirmpassword">Confirm Password</label>
+                							    <input type="password" id="registerconfirmpassword" class="text ui-widget-content ui-corner-all"/>  
+                                                <div id="honeypot-div">
+                                                	<input type="text"/>
+                                                </div>
+    	    						            <p id="confirmregisterbtn"><a class="btn btn-primary btn-lg btn-learn" href="#">Register</a></p>
+    							            </fieldset>
+    							            <fieldset id="registerservices">
+        							            <h4>Your Services</h4>
+    						                    <h5 id="servicessubtext">Which of these services do you subscribe to or use?</h5>
+    						                    <section class="text-center">
+    						                    <section>
+    						                    <h4 class="servicelabel">Netflix</h4>
+    						                    <input id="netflixtoggle" type="checkbox" data-toggle="toggle" data-on="Yes" data-off="No" aria-label="Netflix Response" value="false">
+                                                </section>
+                                                <section>
+                                                <h4 class="servicelabel">Hulu</h4>
+    						                    <input id="hulutoggle" type="checkbox" data-toggle="toggle" data-on="Paid" data-off="Free" aria-label="Hulu Response" value="false">
+                                                </section>
+                                                <section>
+                                                <h4 class="servicelabel">Amazon Instant Video</h4>
+    						                    <input id="amazontoggle" type="checkbox" data-toggle="toggle" data-on="Paid" data-off="Free" aria-label="Amazon Response" value="false">
+                                                </section>
+                                                <section>
+                                                <h4 class="servicelabel">Are you interested in content you have to rent or purchase from Amazon?</h4>
+    						                    <input id="amazonpurchasetoggle" type="checkbox" data-toggle="toggle" data-on="Yes" data-off="No" aria-label="Amazon Purchase Response" value="false">
+                                                </section>
+                                                <section>
+                                                <h4 class="servicelabel">Crunchyroll</h4>
+    						                    <input id="crunchyrolltoggle" type="checkbox" data-toggle="toggle" data-on="Paid" data-off="Free" aria-label="Crunchyroll Response" value="false">
+                                                </section>
+                                                <section>
+    	    						            <p id="confirmservicesbtn"><a class="btn btn-primary btn-lg btn-learn" href="#">Submit</a></p>
+	                                            <h6 id="disclaimer">P.S.: We're not affiliated with these services in any way.</h6>
+    	    						            </section>
+    	    						            </section>
+    							            </fieldset>
+							            </div>
+							        </form>
+							    </div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div ng-include="'footer.html'"></div>
+
+
+	<div id="logindialogwrapper" ng-include="'signindialog.html'"></div>
+	<div id="logoutdialogwrapper" ng-include="'logoutdialog.html'"></div>
+	</div>
+	<!-- END fh5co-page -->
+	</div>
+	<!-- END fh5co-wrapper -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+	<script src="js/register.js"></script>
+	<script src="js/app.js"></script>
+	</body>
+</html>

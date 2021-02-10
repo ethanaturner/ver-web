@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Ver - My Account.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Ver: The easiest way to search major video streaming services and your own collection of shows and movies." />
+		<meta name="keywords" content="netflix, amazon prime, hulu, ver, streaming, video, dvds, bluray, where to watch" />
+		<meta name="author" content="ver.firebaseapp.com" />
+
+  <!--
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="The Ver App" />
+	<meta name="twitter:url" content="www.twitter.com/theverapp" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c64727">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300i,400,500,600" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/superfish.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/webapp.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/blitzer/jquery-ui.min.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "<AD_ID>",
+	    enable_page_level_ads: true
+	  });
+	</script>
+	</head>
+	<body ng-app="verForWeb" ng-controller="verController">
+		<script>
+			var app = angular.module('ver', []);
+		    app.controller('verCtrl', ['$window', '$scope', function ($window, $scope) {
+				$scope.signOut = function(){
+					firebase.auth().signOut().then(function() {
+	                    console.log("Logged out.");
+	                }, function(error) {
+	                    console.log(error.message);
+	                });
+				};
+		    }
+		    ]);
+		</script>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div class="fh5co-overlay" id="overlay"></div>
+		<div id="fh5co-header" ng-include="'header.html'"></div>
+
+		<div class="fh5co-hero fh5co-hero-2" id="myaccountarea">
+			<div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_3.jpg);">
+				<div class="desc animate-box">
+					<h2>My Ver</h2>
+					<span id="subtitle">Welcome back.</span>
+				</div>
+			</div>
+		</div>
+		<!-- end:header-top -->
+		<div id="fh5co-work">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 work">
+						<div class="row">
+							<div class="col-md-6 animate-box">
+								<div class="desc">
+									<h1 id="userfullname">Loading profile . . . </h1>
+									<h4 id="useremail">Loading email . . . </h4>
+									<a href="#" id="usercapacity">Loading capacity . . . </a>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								<div class="desc">
+									<p id="editprofilebtn"><a class="btn btn-primary btn-lg btn-learn" href="#">Edit profile</a></p>
+									<p id="editcapacitybtn"><a class="btn btn-primary btn-lg btn-learn" href="#">Change or upgrade capacity</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 work">
+					<div class="row">
+						<div class="col-md-12 animate-box">
+						</div>
+					</div>
+				</div>
+		</div>
+		</div>
+	</div>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Account Banner -->
+		<ins class="adsbygoogle"
+		     style="display:block"
+		     data-ad-client="<AD_CLIENT>"
+		     data-ad-slot="<AD_SLOT>"
+		     data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	<div ng-include="'footer.html'"></div>
+
+
+	<div id="logindialogwrapper" ng-include="'signindialog.html'"></div>
+	<div id="logoutdialogwrapper" ng-include="'logoutdialog.html'"></div>
+	<div id="updateprofilewrapper" ng-include="'updateprofiledialog.html'"></div>
+	<div id="updatepasswordwrapper" ng-include="'updatepassworddialog.html'"></div>
+	<div id="nouserdialog" title="Unauthorized">
+  		<p>Oops, you have to be logged in to view this page.</p>
+	</div>
+	<div id="comingsoondialog" title="Coming Soon">
+		<p>This feature is coming soon!</p>
+	</div>
+	</div>
+	<!-- END fh5co-page -->
+	</div>
+	<!-- END fh5co-wrapper -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<script src="js/myaccount.js"></script>
+	<script src="js/app.js"></script>
+	</body>
+</html>
